@@ -37,3 +37,9 @@ TEST_CASE( "Pop test", "[inner]" ){
 	}
 	CHECK( s.size() == 500 );
 }
+
+TEST_CASE( "Add Delete Add test", "[inner]" ){
+
+
+
+}

@@ -29,17 +29,23 @@ public:
 		delete [] data;
 	}
 
-	AUDS(const AUDS &other);
+	AUDS(const AUDS &other){
+		
+	}
 
 	AUDS& operator =(AUDS other){
+		std::swap(data, other.data);
+		std::swap(listSize, other.listSize);
+		std::swap(structureSize, other.structureSize);
 
+		return *this;
 	}
 
 	int size(){
 		return listSize;
 	}	
 
-	void push(T x){
+	void push(const T&  x){
 		data[listSize++] = x;
 		expandArray();	
 	}
