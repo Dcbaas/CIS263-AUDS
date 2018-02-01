@@ -39,7 +39,25 @@ TEST_CASE( "Pop test", "[inner]" ){
 }
 
 TEST_CASE( "Add Delete Add test", "[inner]" ){
+	AUDS<std::string> s;
+
+	for(int i{0}; i <1000; i++)
+		s.push("Item" + std::to_string(i));
+
+	for(int i{0}; i<500; i++)
+		std::cout << s.pop() << std::endl;
 
 
+	CHECK( s.size() == 500);
 
+	for(int i{0}; i <500; i++)
+		s.push("Item" + std::to_string(i));
+
+	CHECK( s.size() == 1000);	
+}
+
+TEST_CASE( "Pop from Null list", "[inner]"){
+
+	AUDS<std::string> s;
+	CHECK_THROWS(s.pop());
 }
