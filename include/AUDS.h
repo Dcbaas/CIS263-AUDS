@@ -103,9 +103,6 @@ public:
 		return popped;
 	}
 
-	
-	
-
 private:
 	//A integer to track the size of the data structure itself
 	//This will be different to the size of the list.
@@ -119,10 +116,9 @@ private:
 	T* data;
 
 	/**************************************************************
-	 *The private method expandArray is called everytime an element
-	 *is added to the array to check if the array is full. If full,
-	 *The array is expanded by 50% to accomidate more items
-	 *
+	 * The private method expandArray is called everytime an element
+	 * is added to the array to check if the array is full. If full,
+	 * The array is expanded by 50% to accomidate more items
 	 *************************************************************/
 	void expandArray(){
 		if(listSize == structureSize - 1){
@@ -138,8 +134,6 @@ private:
 			
 			data = temp; 	
 		}
-	
 	}
-
 };
 

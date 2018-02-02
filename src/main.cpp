@@ -61,3 +61,33 @@ TEST_CASE( "Pop from Null list", "[inner]"){
 	AUDS<std::string> s;
 	CHECK_THROWS(s.pop());
 }
+
+TEST_CASE("Test equals initialization", "[inner]"){
+	AUDS<std::string> s;           
+                                                                    
+      	for(int i{0}; i < 5; i++)               	
+    		s.push("Item" + std::to_string(i));
+
+	AUDS<std::string> q{s};		
+
+	CHECK(1);                                                                 
+}
+
+TEST_CASE("Test = operator", "[inner]"){
+	AUDS<std::string> a;           
+	AUDS<std::string> b;        
+                                   
+	for(int i{0}; i < 5; i++)                  
+		a.push("Item" + std::to_string(i));
+
+	b = a;
+
+	CHECK(1);
+}
+
+TEST_CASE("Destructor test", "[inner]"){
+
+	AUDS<int>* nums = new AUDS<int>;
+
+	nums->push(19);
+}
