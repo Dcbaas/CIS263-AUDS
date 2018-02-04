@@ -19,7 +19,6 @@ public:
 	/**************************************************************
  	*The constructor for AUDS creates an initial Array of size 100		
 	*in the heap for use later. 
- 	*
 	**************************************************************/
 	AUDS(){
 		data = new T[structureSize];
@@ -136,4 +135,3 @@ private:
 		}
 	}
 };
-
