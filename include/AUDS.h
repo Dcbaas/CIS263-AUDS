@@ -125,7 +125,7 @@ private:
 			T* temp = new T[structureSize];
 
 			//Trasnfer the elements of data into the new list
-			for(int i{0};i <= listSize; i++){
+			for(int i{0};i < listSize; i++){
 				temp[i] = data[i];
 			}
 			//Delete the old list and set data to point to temp
