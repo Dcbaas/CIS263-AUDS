@@ -1,10 +1,10 @@
  /************************************************************************
- *The AUDS class defines the Almost Useless Data Structure. It takes a 
- *generic data type and stores it in a data stucture that is basically
- *an ArrayList data type from Java.
+ * The AUDS class defines the Almost Useless Data Structure. It takes a 
+ * generic data type and stores it in a data stucture that is basically
+ * an ArrayList data type from Java.
  *
- *Author: David Baas
- *Version: 1.0
+ * @author David Baas
+ * @version 1.0
  *
  **********************************************************************/
 
@@ -17,7 +17,7 @@ template <typename T>
 class AUDS{
 public:
 	/**************************************************************
- 	*The constructor for AUDS creates an initial Array of size 100		
+ 	*The constructor for AUDS creates an initial array of size 100		
 	*in the heap for use later. 
 	**************************************************************/
 	AUDS(){
@@ -31,7 +31,7 @@ public:
 		delete [] data;
 	}
 	/**************************************************************
- 	*The copy constructor creates a deep copy of an AUDS obeject 
+ 	*The copy constructor creates a deep copy of an AUDS object 
  	*when it is initializied as equal to a different AUDS object.
         ***************************************************************/
 	AUDS(const AUDS &other){
